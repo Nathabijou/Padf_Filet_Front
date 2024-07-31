@@ -1,0 +1,23 @@
+.nav-pills li a :hover{
+    background-color: rgb(27, 27, 176);
+    margin: 23;
+    border-color: beige;
+}
+      .icon-circle{
+      width: 50px;
+     
+    };
+  .navleft{
+    width: 200px;
+    margin: 100px;
+  }
+
+  @media screen and(max-width: 10px) {
+    .navleft{
+      width: 20px;
+    }
+  }
+
+
+  
+  

@@ -1,0 +1,364 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.titretext {
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #EFEFEF;
+    border: 1px solid #23b7dc;
+    background-size: small;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+.zone-dropdown{
+    display: flex;
+    align-items: center;
+    margin-top: 0.1rem; 
+}
+
+.search-input {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+.beneficiaire-table {
+    overflow-x: block;
+    position: block;
+    margin-left: 0rem;
+}
+
+.beneficiaire-list {
+    /* Active le défilement vertical si nécessaire */
+    max-height: calc(100vh - 140px);
+    width: 1000px; /* Choisissez la largeur qui convient à votre mise en page */
+    overflow-x: hidden; /* Pour le défilement horizontal */
+    overflow-y: auto; /* Pour le défilement vertical */
+    font-size: small;
+    overflow-x: 0px; /* Active le défilement vertical si nécessaire */
+}
+
+/* Body styles */
+body {
+    background: url('./r2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    animation: bgAnimation 10s linear infinite;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-image: url('./r2.jpg');
+    }
+    50% {
+        background-image: url('./r4.jpg');
+    }
+    100% {
+        background-image: url('./r2.jpg');
+    }
+}
+
+/* Wrapper styles */
+.wrapper {
+    max-width: 400px;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95); /* Fond blanc semi-transparent */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(7, 7, 7, 0.2); /* Légère ombre */
+    text-align: center;
+}
+
+/* Logo styles */
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Title styles */
+.names {
+    font-family: 'Helvetica Neue', sans-serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Couleur du texte */
+    text-align: center;
+  }
+
+/* Form field styles */
+.wrapper .form-field {
+    margin-bottom: 20px;
+}
+
+.wrapper .form-field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Button styles */
+
+
+
+
+.wrapper a:hover {
+    text-decoration: underline;
+}
+
+/* Autres styles pour la page de connexion */
+.login-page {
+    background: url('./padfim.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Autres styles spécifiques à la page de connexion */
+}
+
+
+
+
+
+/* Styles pour la section des détails du programme */
+
+.right-table {
+  background-color: #8fd9d9;
+  margin-top: -13.5rem;
+  margin-left: 64.5rem;
+  max-width: 16rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(180, 36, 36, 0.2);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+/* Styles pour l'image dans la section des détails du programme */
+
+.right-table img {
+  max-width: 100%; /* Réduire la largeur de l'image */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+
+
+/* Styles pour le titre h2 */
+.right-table h2 {
+  font-size: 18px;
+  
+  background-color: #ead75e;
+  padding: 10px 20px; /* Ajustez le rembourrage comme souhaité */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  text-align: center; /* Centrez horizontalement le texte */
+  color: #333; /* Couleur du texte */
+}
+
+/* Styles pour les titres (<th>) des détails du programme */
+/* Styles pour les titres (<th>) des détails du programme */
+.right-table th {
+  font-size: small;
+  font-size: 14px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold; /* Texte en gras */
+  text-align: left; /* Alignement du texte à gauche */
+  padding: 12px; /* Espacement autour du texte */
+  background-color: #563838; /* Couleur de fond */
+  border-bottom: 1px solid #ddd; /* Bordure en bas */
+}
+
+/* Styles pour les valeurs (<td>) des détails du programme */
+.right-table td {
+  text-align: left; /* Alignement du texte à gauche */
+  padding: 12px; 
+  font-style: normal;/* Espacement autour du texte */
+  border-bottom: 1px solid #ddd; /* Bordure en bas */
+  vertical-align: top; /* Alignement vertical en haut */
+}
+
+/* Style pour chaque ligne paire de détails du programme */
+.right-table tr:nth-child(even) {
+  background-color: #6812bd; /* Couleur de fond pour les lignes paires */
+}
+.views-table{
+    padding: 2px; 
+    margin-left: -0.4rem;
+
+}
+/*ente projet dans views*/
+.imviews{
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+}
+
+
+.imageresponsable {
+    margin-left: 6rem;
+    width: 200px; /* Largeur de la boîte carrée */
+    height: 200px; /* Hauteur de la boîte carrée */
+    overflow: hidden; /* Cacher le contenu qui dépasse */
+    border: 2px solid #ccc; /* Bordure */
+    position: relative; /* Position relative pour contenir la photo de la personne */
+  }
+  
+  /* Styles pour l'image de la personne */
+  .person-photo {
+    margin-left: -26rem;
+    width: 100%; /* Ajuster la largeur de l'image au conteneur carré */
+    height: 100%; /* Ajuster la hauteur de l'image au conteneur carré */
+    object-fit: cover; /* Ajuster l'image pour qu'elle couvre tout le conteneur carré */
+    position: absolute; /* Position absolue pour placer l'image dans la boîte carrée */
+    top: 0; /* Aligner l'image en haut */
+    right: 0; /* Aligner l'image à droite */
+  }
+.container{
+    width: 100vh;
+    min-height: 100vh;
+}
+.sidebar{
+    width: 30rem;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #16a085;
+}
+.addprojets{
+    width: 78rem;
+    height: 12vh;
+    margin-left: 49.2rem;
+}
+.addprojet{
+    width: 80rem;
+    height: 11vh;
+}
+.quartier{
+    width: 38rem;
+    margin-left: 40.2rem;
+    margin-top: -5.4rem;
+}
+.frontcol{
+    background-color: #32404d23;
+    border-radius: 0.5rem;
+    margin-top: 500rem;
+}
+.gps{
+    width: 40.7rem;
+    height: 12vh; 
+}
+.date{
+    width: 38.5rem;
+    margin-left: 40rem;
+    margin-top: -5.7rem;
+   
+}
+.title{
+    background-color: #d4e9e790;
+    color: #406092;
+    margin-top: -3rem;
+    font-size: 1.5rem;
+
+}.beneficiaireind{
+    width: 38.5rem;
+    margin-left: 40rem;
+    margin-top: -5.7rem;
+    
+    
+}
+.budget{
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #286B9E;
+    color: #f9f9fa;
+    font-size: 1.2rem;   
+    border-radius: 6px;
+}
+.information{
+    text-align: center;
+    margin-top: -0.7rem;
+    background-color: #286B9E;
+    color: #f9f9fa;
+    border-radius: 6px;
+    font-size: 1.2rem;  
+    text-shadow: #16a085;
+}
+.bouton{
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #f6f0f0;
+    border-radius: 0.5rem;
+
+}
+.boutonaddbeneficiaire{
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #f6f0f0;
+    border-radius: 0.5rem; 
+    margin-top: 3rem;
+}
+.boutonaddpresence{
+    text-align: center;
+    font-size: 1.6rem;
+    background-color: #fefafa9b;
+    border-radius: 0.5rem; 
+    margin-top: 2rem;
+}
+.nomchamp{
+    font-size: 1rem;
+    color: #286B9E;
+}
+.navcol{
+    background: #286B9E;
+    size: 20rem;
+    font-size: 15px;
+    height: 3.3rem;
+    border-radius: 0.2rem;
+
+}
+.droplist{
+    size: 10rem;
+    font-size: 1px;
+    height: 1.93rem;
+    margin-top: 3px;
+}
+.droplist2{
+    
+    font-size: 1px;
+    height: 1.9rem;
+    margin-top: 3px; 
+}.addbene{
+    width: 40rem;
+    height: 8vh;
+    margin-left: 16rem;
+    
+}
+.sec{
+    font-size: 2rem; 
+    background-color: #c0e7eed2;
+    border-radius: 8px;
+}
+
+
+

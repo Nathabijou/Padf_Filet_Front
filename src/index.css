@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dropDownProfile{
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  width: 130px;
+  padding: 5px;
+  border-radius: 12px;
+  background-color: rgb(210, 222, 240);
+  border: 1px solid rgb(91, 3, 3);
+
+}
+.dropDownProfile::before{
+  content: '';
+  position: absolute;
+  top: -0.7rem;
+  right: 1rem;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color:  rgb(210, 222, 240);
+  border-left: 1px solid rgb(11, 11, 11);
+  border-top:  1px solid rgb(16, 16, 16) ;
+  
+}
+.boutmap{
+  color: aliceblue;
+  size: 100px;
+  font-size: large;
+}
