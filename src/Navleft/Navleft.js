@@ -14,7 +14,7 @@ const { Search } = Input;
 const menuItems = [
   { key: '/App', label: 'Program', icon: <AppstoreOutlined /> },
   { key: '/App/globaldashboard', label: 'Dashboards', icon: <DashboardOutlined /> },
-  { key: '/App/Report', label: 'Reports', icon: <DashboardOutlined /> },
+  // { key: '/App/Report', label: 'Reports', icon: <DashboardOutlined /> },
   { key: '/App/Reportss', label: 'Report', icon: <DashboardOutlined /> },
  
   { key: '/Dasboard', label: "Etats d'avancements", icon: <LineChartOutlined /> },

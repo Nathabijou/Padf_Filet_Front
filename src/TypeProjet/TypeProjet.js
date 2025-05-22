@@ -52,13 +52,13 @@ export default function TypeProjet() {
 
       <div className="py-1 mt-4 mx-1  beneficiaire-list">
         <div className="sticky-buttons d-flex justify-content-between">
-          <Link to={`/App/program/${programId}/composante/${composanteId}`}>
-            <svg width="50" height="40" fill="currentColor" className="bi bi-arrow-left" viewBox="3 0 5 16">
+          {/* <Link to={`/App/program/${programId}/composante/${composanteId}`}> */}
+            {/* <svg width="50" height="40" fill="currentColor" className="bi bi-arrow-left" viewBox="3 0 5 16">
               <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
-            </svg>
-            <Link className='createreports' to="/App/program/:programId/composante/:composanteId/addtypeProjet"
+            </svg> */}
+            {/* <Link className='createreports' to="/App/program/:programId/composante/:composanteId/addtypeProjet"
               style={{ fontSize: '12px', padding: '3px 5 px', color: 'white', marginLeft: "5rem", }}> + Nouveau Type de projet </Link>
-          </Link>
+          </Link> */}
           <div className="search-box">
             <input
               type="text"

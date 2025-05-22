@@ -35,6 +35,8 @@ export default function Beneficiaire() {
   const [isPanelVisible, setIsPanelVisible] = useState(false);
   const [totalPayroll, setTotalPayroll] = useState(0); // Ajoutez un état pour stocker le total de la paie
 
+
+  
   const [totalMoncash, setTotalMoncash] = useState(0);
   const [totalLajancash, setTotalLajancash] = useState(0);
   const [totalFilleQualifier, setTotalFilleQualifier] = useState(0);
@@ -71,10 +73,11 @@ export default function Beneficiaire() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const correctPassword = "1"; // Mot de passe correct à adapter
+    const correctPassword = "11"; // Mot de passe correct à adapter
     if (password === correctPassword) {
       try {
         const response = await axios.get(`${baseUrl}/petitprojet/${petitprojetId}/payrolls`);
+
         setPayrolls(response.data);
         calculateTotalPayroll(response.data);
         setIsPasswordCorrect(true);
@@ -206,7 +209,7 @@ export default function Beneficiaire() {
         <div className="d-flex justify-content-between">
           <Link
             to={`/App/program/${programId}/composante/${composanteId}/typeprojet/${typeprojetId}/petitprojet/${typeprojetId}`}>
-            <svg
+            {/* <svg
               width="40"
               height="40"
               fill="currentColor"
@@ -215,7 +218,7 @@ export default function Beneficiaire() {
               <path
                 fillRule="evenodd"
                 d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-            </svg>
+            </svg> */}
 
             <Link
               className="btn btn-success mx-3"

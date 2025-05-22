@@ -1,6 +1,7 @@
 {
   "name": "padffront",
   "version": "0.1.0",
+  "homepage": "https://Nathabijou.github.io/Padf_Filet_Front",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
@@ -19,6 +20,7 @@
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
+    "caniuse-lite": "^1.0.30001718",
     "chart.js": "^3.9.1",
     "dummy-json": "^3.0.5",
     "leaflet": "^1.9.4",
@@ -42,7 +44,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -65,7 +69,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react": "^18.2.47",
-    "file-loader": "^6.2.0"
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0"
   },
   "babel": {
     "presets": [
